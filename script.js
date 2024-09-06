@@ -1,7 +1,7 @@
 let input = document.querySelector('.input');
 let btn = document.querySelector('.btn');
 let text = document.querySelector('.text');
-
+let copyBtn = document.querySelector('.copyBtn');
 let letters = {
     "a": "ا",
     "b": "ب",
@@ -36,11 +36,15 @@ let letters = {
     "7": "ح",
     "8": "غ",
 }
-
+copyBtn.addEventListener('click',()=>{
+    if(!text.textContent) return;
+    navigator.clipboard.writeText(text.textContent);
+})
 btn.addEventListener('click',()=>{
     let newWord = "";
     let value = input.value;
     value = value.toLowerCase();
+    if(value.length==0) return;
     for(let i=0;i<input.value.length;i++){
         if("abcdefghijklmnopqrstuvwxyz234578".includes(value[i])){
             newWord+= letters[value[i]];
