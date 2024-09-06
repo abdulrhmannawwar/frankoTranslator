@@ -41,10 +41,6 @@ btn.addEventListener('click',()=>{
     let newWord = "";
     let value = input.value;
     value = value.toLowerCase();
-    console.log(value);
-    if(value.includes(' e')){
-        value = value.replaceAll(' e',' ا');
-    } 
     for(let i=0;i<input.value.length;i++){
         if("abcdefghijklmnopqrstuvwxyz234578".includes(value[i])){
             newWord+= letters[value[i]];
@@ -60,6 +56,12 @@ btn.addEventListener('click',()=>{
     }
     if(newWord.includes('يه')){
         newWord = newWord.replaceAll('يه','ايه');
+    }
+    if(newWord.includes('يستا')){
+        newWord = newWord.replaceAll('يستا','يسطا');
+    }
+    if(newWord.includes('مسه')){
+        newWord = newWord.replaceAll('مسه','مش');
     }
     text.textContent = newWord;
 })
