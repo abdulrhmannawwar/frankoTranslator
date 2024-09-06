@@ -27,6 +27,7 @@ body{
 .text{
     font-size: 50px;
     font-weight: bold;
+    witdh : 90%;
     color : #F5EDED;
 }
 .btn:hover{
