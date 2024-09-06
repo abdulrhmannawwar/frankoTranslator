@@ -12,6 +12,7 @@ body{
     border-radius: 20px;
     text-align: center;
     padding: 20px;
+    word-break: break-all;
     font-family: Arial, Helvetica, sans-serif;
 }
 .btn{
@@ -27,7 +28,8 @@ body{
 .text{
     font-size: 30px;
     font-weight: bold;
-    width : 300px;
+    width : 90%;
+    word-break: break-all;
     color : #F5EDED;
 }
 .btn:hover{
