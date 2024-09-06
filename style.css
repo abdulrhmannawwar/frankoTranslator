@@ -28,6 +28,7 @@ body{
 .text{
     font-size: 30px;
     font-weight: bold;
+    padding : 20px;
     width : 90%;
     word-break: break-word;
     color : #F5EDED;
